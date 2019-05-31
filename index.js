@@ -18,9 +18,7 @@ fetchFiveDayForecast(whatTheyTyped);
 function fetchCurrentWeather(city) {
   //fetch current weather based on city
   // query parameter
-  fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=' + API_KEY + '&units=imperial')
-  .then(response => response.json())
-  .then(json => displayCurrentWeather(json));
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=' + API_KEY + '&units=imperial');
 }
 
 function displayCurrentWeather(json) {
